@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F5F6FA;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p{
+    color: #67727E;
+    line-height: 25px;
+    font-size: 17px;
+}
+
+button{
+    width: 104px;
+    height: 48px;
+    background-color: #5357B6;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+}
+
+.personImg{
+    height: 32px;
+    width: 32px;
+}
+
+.cont{
+    border: 1px solid;
+    height: 896px;
+    width: 732px;
+}
+
+#commentWindow{
+    width: 100%;
+    height: 89%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: scroll;
+}
+
+.messBox{
+    /* width: 94%; */
+    padding: 20px 20px 25px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.voteDiv{
+    background-color: #F5F6FA;
+    height: 100px;
+    width: 100px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #5357B6;
+}
+
+.iconBox{
+    height: 15px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus{
+    height: 10px;
+    width: 10px;
+}
+
+.minus{
+    width: 10px;
+    height: 2.5px;
+}
+
+.rightOfComment{
+    width: 100%;
+}
+
+.msgBoxHeader{
+    width: 625px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.flex{
+    display: flex;
+    gap: 25px;
+}
+
+.flexAlCent{
+    display: flex;
+    align-items: center;
+}
+
+.optionsClass{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.replySvg{
+    height: 12.25px;
+    width: 14px;
+}
+
+.editSvg{
+    height: 13.95px;
+    width: 14px;
+}
+
+.removeSvg{
+    height: 14px;
+    width:11.53px;
+}
+
+.reply{
+    color: #5357B6;
+    font-weight: 600;
+}
+
+.edit{
+    color: #5357B6;
+    font-weight: 600;
+}
+
+.remove{
+    color:#ed6368;
+    font-weight: 600;
+}
+
+.msgSenderDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0%;
+    background-color: #ffffff;
+}
+
+.textArea{
+    width: 70%;
+    height: 50px;
+    resize: none;
+}
+
+.line{
+    height: 100%;
+    width: 2px;
+    background-color: #0000000d;
+    border: none;
+    margin-left: 35px;
+    margin-right: 35px;
+    
+}
+
+.allRepliesOfAComment{
+    display: flex;
+}
+
+.allRepliesBoxRight{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+p:focus{
+    outline: none; /* Remove the default outline */
+    border: 2px solid; /* Set a custom border color */
+    background-color: rgb(235, 235, 235);
+    /* box-shadow: 0 0 5px rgba(119, 141, 120, 0.5); Add a subtle glow or shadow effect */
+  }

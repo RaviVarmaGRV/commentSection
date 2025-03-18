@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="webRTC.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- <h1>Video</h1> -->
+    <div class="mainBox">
+        <div class="videoDivs">
+            <h2>First Person</h2>
+            <video autoplay src="" id="yourVideo">
+            </video>
+            <i class="fa-solid fa-pause" id="one"></i>
+    
+        </div>
+    
+        <div class="videoDivs">
+            <h2>Second Person</h2>
+            <video autoplay src="" id="otherVideo"></video>
+            <i class="fa-solid fa-pause" id="two"></i>
+        
+        </div>
+    </div>
+
+    <button id="start">Start</button>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../client2.js"></script>
+</body>
+</html>

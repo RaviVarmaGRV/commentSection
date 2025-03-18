@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="thread.css">
+</head>
+<body>
+    <div class="cont">
+        <div id="commentWindow">
+            <div class="messBox" id="comment0" data-reply="on">
+                <div class="voteDiv" data-vote="on">
+                    <div style="height: 15px;width: 15px;display: flex;justify-content: center;align-items: center;" title="upvote">
+                        <img src="./images/icon-plus.svg" class="plus" alt="" >
+                    </div>
+                    <p id="mes0">0</p>
+                    <div style="height: 15px;width: 15px;display: flex;justify-content: center;align-items: center;" title="downvote">
+                        <img src="./images/icon-minus.svg" class="minus" alt="" >
+                    </div>
+                </div>
+                <div class="rightOfComment">
+                    <div class="msgBoxHeader">
+                        <div class="flex">
+                            <img src="./images/avatars/image-amyrobson.png" class="personImg" alt="img">
+                            <h4 class="flexAlCent">amyrobson</h4>
+                            <p class="flexAlCent">24/12/2024</p>
+                        </div>
+                        <div class="optionsClass" id="replyNum0">
+                            <img src="./images/icon-reply.svg" class="replySvg" alt="">
+                            <p class="reply">Reply</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.                           
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="allRepliesOfAComment">
+                <hr class="line">
+                <div class="allRepliesBoxRight" id="repBox0"></div>
+            </div>
+            
+        </div>
+        <div class="msgSenderDiv">
+            <img src="./images/avatars/image-juliusomo.png" class="personImg" alt="">
+            <textarea name="" class="textArea"></textarea>
+            <button id="send">Send</button>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../client.js"></script>
+</body>
+</html>
