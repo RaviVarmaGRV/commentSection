@@ -1,5 +1,3 @@
-console.log('In a good flow');
-
 var clientSocket=io();
 
 

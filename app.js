@@ -46,7 +46,7 @@ io.on("connection", (socket) => {
                         console.log('An error occured', err);
                     } else {
                         console.log('wait');
-
+                        
                         data.forEach((commentObj) => {
                         socket.emit('msgAdd', commentObj.comment_content, commentObj.replied_to, commentObj.user_id, commentObj.comment_id, commentObj.likes_count, commentObj.time_of_comment)
                         })
